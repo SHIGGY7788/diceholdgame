@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="rollthedice.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="wrap">
+    <div class="main">
+        <div class="p1">
+            <div class="p1box"></div>
+            <p class="p1title">Player 1</p>
+            <p class="score">Score: <span>0</span></p>
+            <div class="current-p1">
+                <p>Current <br><span id="p1current">0</span></p>
+            </div>
+
+        </div>
+        <div class="p2">
+            <div class="p2box"></div>
+            <p class="p2title">Player 2</p>
+            <p class="score">Score: <span>0</span></p>
+            <div class="current-p2">
+                <p>Current <br><span id="p2current">0</span></p>
+            </div>
+
+        </div>
+
+
+        <div class="controls">
+            <button class="hold-dice" id="hold">📥 Hold Dice</button>
+            <button class="new-game" id="new">🔄 New Game</button>
+            <div class="dice" onclick="DiceClick()">
+                    <img src="dice1.png" alt="Dice 1" class="dice-1" id="dice-1">
+                    <img src="dice2.png" alt="Dice 2" class="dice-2" id="dice-2">
+                    <img src="dice3.png" alt="Dice 3" class="dice-3" id="dice-3">
+                    <img src="dice4.png" alt="Dice 4" class="dice-4" id="dice-4">
+                    <img src="dice5.png" alt="Dice 5" class="dice-5" id="dice-5">
+                    <img src="dice6.png" alt="Dice 6" class="dice-6" id="dice-6">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/rollthedice.js"></script>
+</body>
+</html>
